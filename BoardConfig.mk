@@ -59,8 +59,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/ulefone/Armor_8_Pro
-TARGET_KERNEL_CONFIG := Armor_8_Pro_defconfig
+#TARGET_KERNEL_SOURCE := kernel/ulefone/Armor_8_Pro
+#TARGET_KERNEL_CONFIG := Armor_8_Pro_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6771
