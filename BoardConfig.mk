@@ -62,6 +62,10 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 #TARGET_KERNEL_SOURCE := kernel/ulefone/Armor_8_Pro
 #TARGET_KERNEL_CONFIG := Armor_8_Pro_defconfig
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mt6771
+TARGET_NO_BOOTLOADER := true
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6771
 
