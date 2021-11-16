@@ -20,9 +20,12 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit common product files - PBRP
 #$(call inherit-product, vendor/pb/config/common.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+	$(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Armor_8_Pro
 PRODUCT_NAME := twrp_Armor_8_Pro
-PRODUCT_BRAND := Ulefone
+PRODUCT_BRAND := ulefone
 PRODUCT_MODEL := Armor 8 Pro
 PRODUCT_MANUFACTURER := ulefone
