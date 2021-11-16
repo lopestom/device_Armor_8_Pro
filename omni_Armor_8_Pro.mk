@@ -13,19 +13,19 @@
 # Inherit from Armor_8_Pro device
 $(call inherit-product, device/ulefone/Armor_8_Pro/device.mk)
 
-# Inherit some common Omni stuff.
-#$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 #$(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit common product files - PBRP
-$(call inherit-product, vendor/pb/config/common.mk)
+#$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Armor_8_Pro
-PRODUCT_NAME := omni_Armor_8_Pro
+PRODUCT_NAME := twrp_Armor_8_Pro
 PRODUCT_BRAND := Ulefone
 PRODUCT_MODEL := Armor 8 Pro
 PRODUCT_MANUFACTURER := ulefone
