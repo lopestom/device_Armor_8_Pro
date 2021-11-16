@@ -6,9 +6,9 @@
 #
 
 # Inherit from those products. Most specific first.
-#$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from Armor_8_Pro device
 $(call inherit-product, device/ulefone/Armor_8_Pro/device.mk)
@@ -19,9 +19,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit common product files - PBRP
 #$(call inherit-product, vendor/pb/config/common.mk)
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Armor_8_Pro
