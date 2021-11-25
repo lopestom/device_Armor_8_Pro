@@ -99,7 +99,7 @@ on property:twrp.decrypt.done=true
     stop hwservicemanager
     rm /sdcard/TWRP/magisk
     mkdir /sdcard/TWRP/magisk
-    symlink /system/magisk/InstallMagisk.zip /sdcard/TWRP/magisk/InstallMagisk.zip
+#    symlink /system/magisk/InstallMagisk.zip /sdcard/TWRP/magisk/InstallMagisk.zip
 #    symlink /system/magisk/uninstall.zip /sdcard/TWRP/magisk/uninstall.zip
     symlink /system/magisk/NoReplaceTWRP.zip /sdcard/TWRP/magisk/NoReplaceTWRP.zip
 
