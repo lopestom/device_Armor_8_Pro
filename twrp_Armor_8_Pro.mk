@@ -24,8 +24,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
-	$(LOCAL_PATH)/prebuilt/dtb:dtb.img
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+#\
+#	$(LOCAL_PATH)/prebuilt/dtb:dtb.img
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Armor_8_Pro
